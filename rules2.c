@@ -6,7 +6,7 @@
 /*   By: yawang <yawang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 12:06:13 by yawang            #+#    #+#             */
-/*   Updated: 2024/10/28 14:55:39 by yawang           ###   ########.fr       */
+/*   Updated: 2024/10/28 15:10:37 by yawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 /* ra (rotate a): Shift up all elements of stack a by 1.
 The first element becomes the last one. */
-
 void	ft_rotatea(t_init *s)
 {
 	int	tmp;
@@ -34,7 +33,6 @@ void	ft_rotatea(t_init *s)
 
 /* rb (rotate b): Shift up all elements of stack b by 1. 
 The first element becomes the last one. */
-
 void	ft_rotateb(t_init *s)
 {
 	int	tmp;
@@ -53,7 +51,6 @@ void	ft_rotateb(t_init *s)
 }
 
 /* rr : ra and rb at the same time. */
-
 void	ft_rotater(t_init *s)
 {
 	s->counter = 1;
