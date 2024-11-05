@@ -6,7 +6,7 @@
 /*   By: yawang <yawang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 16:11:45 by yawang            #+#    #+#             */
-/*   Updated: 2024/11/05 16:37:03 by yawang           ###   ########.fr       */
+/*   Updated: 2024/11/05 17:23:36 by yawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,10 @@ typedef struct s_init
 	int		min_i;
 	int		max_i;
 }	t_init;
+
+/* main.c */
+void	two_args_init(t_init *ps, char **argv);
+void	multi_args_init(t_init *ps, int argc, char **argv);
 
 /* rules1/2/3.c */
 void	ft_swapa(t_init *s);
@@ -63,6 +67,9 @@ int		check_order(t_init *s);
 void	check_non_num(char *str);
 void	check_max_min(char *str);
 void	check_doubles(int *tab, int len);
+
+/* errors.c */
+int		error(void);
 
 /* free.c */
 void	free_stacks(t_init *s);
