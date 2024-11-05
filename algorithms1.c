@@ -6,7 +6,7 @@
 /*   By: yawang <yawang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 19:52:33 by yawang            #+#    #+#             */
-/*   Updated: 2024/10/31 19:35:33 by yawang           ###   ########.fr       */
+/*   Updated: 2024/11/05 16:34:08 by yawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,18 @@ void	four_int_alg(t_init *s)
 	{
 		ft_pushb(s);
 		three_int_alg(s);
+		ft_pusha(s);
+	}
+}
+
+void	five_int_alg(t_init *s)
+{
+	find_smallest(s);
+	push_up(s);
+	if (!check_order(s))
+	{
+		ft_pushb(s);
+		four_int_alg(s);
 		ft_pusha(s);
 	}
 }
