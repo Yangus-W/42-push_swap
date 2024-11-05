@@ -6,7 +6,7 @@
 /*   By: yawang <yawang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 19:40:33 by yawang            #+#    #+#             */
-/*   Updated: 2024/11/01 15:04:02 by yawang           ###   ########.fr       */
+/*   Updated: 2024/11/05 16:38:25 by yawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,18 @@ void	large_int_alg(t_init *s)
 			ft_pusha(s);
 		i++;
 	}
+}
+
+void	algorithms(t_init *s)
+{
+	if (s->int_a == 2)
+		two_int_alg(s);
+	else if (s->int_a == 3)
+		three_int_alg(s);
+	else if (s->int_a == 4)
+		four_int_alg(s);
+	else if (s->int_a == 5)
+		five_int_alg(s);
+	else if (s->int_a > 5)
+		large_int_alg(s);
 }
