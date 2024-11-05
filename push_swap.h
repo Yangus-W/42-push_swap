@@ -6,7 +6,7 @@
 /*   By: yawang <yawang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 16:11:45 by yawang            #+#    #+#             */
-/*   Updated: 2024/10/23 16:31:33 by yawang           ###   ########.fr       */
+/*   Updated: 2024/11/05 16:37:03 by yawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,50 @@ typedef struct s_init
 	int		i;
 	int		j;
 	int		counter;
-	int		small_i;
-	int		big_i;
-	float	median;
+	int		min_i;
+	int		max_i;
 }	t_init;
+
+/* rules1/2/3.c */
+void	ft_swapa(t_init *s);
+void	ft_swapb(t_init *s);
+void	ft_swaps(t_init	*s);
+void	ft_pusha(t_init *s);
+void	ft_pushb(t_init *s);
+void	ft_rotatea(t_init *s);
+void	ft_rotateb(t_init *s);
+void	ft_rotater(t_init *s);
+void	ft_reverse_rotatea(t_init *s);
+void	ft_reverse_rotateb(t_init *s);
+void	ft_reverse_rotater(t_init *s);
+
+/* algorithms1/2.c */
+void	algorithms(t_init *s);
+void	large_int_alg(t_init *s);
+void	two_int_alg(t_init *s);
+void	three_int_alg(t_init *s);
+void	four_int_alg(t_init *s);
+void	five_int_alg(t_init *s);
+
+/* alg_utils.c */
+void	three_alg_help(t_init *s);
+void	push_up(t_init *s);
+void	find_smallest(t_init *s);
+
+/* checks.c */
+int		check_order(t_init *s);
+void	check_non_num(char *str);
+void	check_max_min(char *str);
+void	check_doubles(int *tab, int len);
+
+/* free.c */
+void	free_stacks(t_init *s);
+
+/* helpers.c */
+void	create_stacks(t_init *s);
+void	init_stack(t_init *s);
+
+/* normalize */
+void	ft_normalize(t_init *s);
 
 #endif
