@@ -6,7 +6,7 @@
 /*   By: yawang <yawang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 19:40:33 by yawang            #+#    #+#             */
-/*   Updated: 2024/11/05 16:38:25 by yawang           ###   ########.fr       */
+/*   Updated: 2024/11/08 18:07:06 by yawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	large_int_alg(t_init *s)
 			else
 				ft_rotatea(s);
 		}
-		while (s->int_a > 0)
+		while (s->int_b > 0)
 			ft_pusha(s);
 		i++;
 	}
